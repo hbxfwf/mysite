@@ -1,0 +1,63 @@
+site:
+  title: 首页
+  description: GitSite is a static web site generator for Git.
+  keywords: gitsite, git, static web site, html
+  theme: default
+  language: zh-CN
+  # set the /<rootPath> pathname under which your site is served
+  # for GitHub pages deployment without a custom domain, it is often '/<projectName>'
+  # root-path: /gitsite
+  # set cdn path:
+  cdn-path: https://cdn.jsdelivr.net/npm
+  navigation:
+    - title: JavaSE基础
+      uri: /books/javase/index.html
+    - title: JavaWeb基础
+      uri: /books/javaweb/index.html
+    - title: SSM框架
+      uri: /books/ssm/index.html
+    - title: SpringBoot
+      uri: /books/springboot/index.html
+    - title: SpringCloud微服务
+      uri: /books/springcloud/index.html
+      external: true
+  git:
+    base-url: https://github.com/michaelliao/gitsite/blob/main/source
+  contact:
+    name: 王峰
+    gitee: https://gitee.com/hbxfwf
+    twitter: https://twitter.com/liaoxuefeng
+  books:
+    index-marker: true
+  search:
+    # none = no search
+    # browser = flex search in browser
+    # google = google site search
+    type: browser
+  # control styles:
+  styles:
+    # show 'Edit in Git':
+    display-git-link: false
+    # any custom styles used in theme:
+    # code-font: Monaco
+  integration:
+    comment:
+      provider: disqus
+      name: gitsite
+    analytics:
+      provider: google
+      gtag: G-5Z40K7NBL5
+  footer: |
+          <div>
+            &copy;<a href="http://hezhong.test.qmhlw.com/">深圳合众艾特</a> 
+            - <a href="https://weibo.com/hbxfwf" target="_blank">微博</a>
+            - <a href="https://github.com/michaelliao/hbxfwf.com" target="_blank">GitHub</a>
+          </div>	
+build:
+  # copy special files under root dir (ignore if not found):
+  copy:
+    - favicon.ico
+    - robots.txt
+    - ads.txt
+
+# you can add any items:
